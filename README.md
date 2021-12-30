@@ -1,8 +1,8 @@
-# Update renovate config for all repositories
+# Update renovate config for all your repositories
 
 ## Setup
 
-1. `git clone repo`
+1. `git clone git@github.com:runely/update-renovate-config.git`
 1. `npm i`
 1. Create a `renovate_preset.json` file or rename `renovate_preset_example.json`, containing your new `renovate` config to be used in all your repos
 1. Create a `.env` file:
