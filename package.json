@@ -4,7 +4,7 @@
   "description": "Update renovate config in all your repositories in one go",
   "main": "index.js",
   "scripts": {
-    "get-repos": "node utils/get-renovate-repos.js",
+    "get-renovate-repos": "node utils/get-renovate-repos.js",
     "clone-repos": "node utils/clone-repos.js",
     "update-repos": "node utils/update-repos.js"
   },
