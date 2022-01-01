@@ -27,9 +27,7 @@
 1. Run `npm run clone-repos` to clone down a fresh copy of all repos. They will be saved in `./repos` folder
 1. Run `npm run update-repos` to update `renovate` config in all repos
 
-# :exclamation: FYI
-
-This tool will only modify and commit to a repository if:
+**:exclamation: This tool will only modify and commit to a repository if**:
 - It's not archived
 - It already has a `renovate.json` file
 - `renovate.json` file is different from `renovate_preset.json` setup earlier
