@@ -5,12 +5,13 @@
 1. `git clone git@github.com:runely/update-renovate-config.git`
 1. `npm i`
 1. Create a `renovate_preset.json` file or rename `renovate_preset_example.json`, containing your new `renovate` config to be used in all your repos
+1. [Create a personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-token) with `repo scope`
 1. Create a `.env` file:
     ```bash
     GITHUB_USERNAME=<GitHub username where personal-access-token is created>
     GITHUB_PERSONAL_ACCESS_TOKEN=<personal-access-token>
     RENOVATE_CONFIG=<Full path to renovate_preset.json file>
-    RENOVATE_COMMIT_MESSAGE=<Your own commit message. If set to empty or removed, a default will be used>
+    RENOVATE_COMMIT_MESSAGE=<Your own commit message. If set to empty or removed, a default commit message will be used>
     ```
 
 ## Usage
@@ -29,4 +30,4 @@ This tool will only modify and commit to a repository if:
 
 ## ToDo
 
-- Implement functionallity to fetch all your repos automatically
+- Implement functionallity to fetch all your repos automatically (handling pagination)
