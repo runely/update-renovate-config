@@ -13,6 +13,8 @@ const getRenovateConfig = path => {
 module.exports = {
   GITHUB_USERNAME: process.env.GITHUB_USERNAME,
   GITHUB_PERSONAL_ACCESS_TOKEN: process.env.GITHUB_PERSONAL_ACCESS_TOKEN,
+  GITHUB_REPO_USERNAME: process.env.GITHUB_REPO_USERNAME || false,
+  GITHUB_REPO_ORGNAME: process.env.GITHUB_REPO_ORGNAME || false,
   RENOVATE_FILENAME: process.env.RENOVATE_FILENAME || 'renovate.json',
   RENOVATE_CONFIG: getRenovateConfig(process.env.RENOVATE_CONFIG),
   RENOVATE_COMMIT_MESSAGE: process.env.RENOVATE_COMMIT_MESSAGE || 'Updated config'
