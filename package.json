@@ -13,7 +13,7 @@
   "author": "Rune Moskvil Lyngås <rune.moskvil.lyngaas@vtfk.no> (https://github.com/runely)",
   "license": "MIT",
   "dependencies": {
-    "axios": "0.24.0",
+    "axios": "1.6.0",
     "child_process": "1.0.2",
     "colors": "1.4.0",
     "dotenv": "10.0.0"
